@@ -1,16 +1,22 @@
 <template>
-  <p>いいね({{number}})</p>
+  <div>
+    <LikeHeader></LikeHeader>
+    <LikeNumber></LikeNumber>
+  </div>
 </template>
 
 <script>
+import LikeHeader from "./components/LikeHeader.vue";
+
 export default {
-  data() {
-    return {
-      number: 5
-    }
+  components: {
+    LikeHeader
   }
 }
 </script>
 
-<style>
+<style scoped>
+div {
+  border: 1px solid blue;
+}
 </style>
